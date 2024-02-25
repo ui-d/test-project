@@ -1,9 +1,9 @@
-import React from 'react';
-import { Text } from './Text';
+import React from "react"
+import { Text } from "./Text"
 
 export default {
-title: 'YourCategory/Text',
-component: Text,
-};
+  title: "YourCategory/Text",
+  component: Text,
+}
 
-export const Default = () => <Text />;
+export const Default = () => <Text />

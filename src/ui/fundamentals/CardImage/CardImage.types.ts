@@ -1,1 +1,1 @@
-export type CardImageProps = {};
+export type CardImageProps = {}

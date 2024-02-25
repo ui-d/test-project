@@ -1,1 +1,1 @@
-export type TextProps = {};
+export type TextProps = {}

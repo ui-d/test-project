@@ -1,5 +1,5 @@
-import { CardImageProps } from './CardImage.types';
+import { CardImageProps } from "./CardImage.types"
 
 export const CardImage = ({}: CardImageProps) => {
-  return <>CardImage</>;
-};
+  return <>CardImage</>
+}

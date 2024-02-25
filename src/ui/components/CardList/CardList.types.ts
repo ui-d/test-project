@@ -1,1 +1,1 @@
-export type CardListProps = {};
+export type CardListProps = {}

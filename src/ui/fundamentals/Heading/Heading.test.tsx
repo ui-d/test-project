@@ -1,13 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from "@testing-library/react"
 
-import { Heading } from './Heading';
+import { Heading } from "./Heading"
 
-describe('Heading', () => {
-  test('renders', () => {
-    render(<Heading />);
+describe("Heading", () => {
+  test("renders", () => {
+    render(<Heading />)
 
-    const element = screen.getByText('Heading');
+    const element = screen.getByText("Heading")
 
-    expect(element).toBeInTheDocument();
-  });
-});
+    expect(element).toBeInTheDocument()
+  })
+})

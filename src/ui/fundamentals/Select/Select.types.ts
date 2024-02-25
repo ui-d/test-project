@@ -1,1 +1,1 @@
-export type SelectProps = {};
+export type SelectProps = {}

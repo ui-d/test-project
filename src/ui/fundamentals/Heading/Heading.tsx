@@ -1,5 +1,5 @@
-import { HeadingProps } from './Heading.types';
+import { HeadingProps } from "./Heading.types"
 
 export const Heading = ({}: HeadingProps) => {
-  return <>Heading</>;
-};
+  return <>Heading</>
+}

@@ -1,1 +1,1 @@
-export type ButtonProps = {};
+export type ButtonProps = {}

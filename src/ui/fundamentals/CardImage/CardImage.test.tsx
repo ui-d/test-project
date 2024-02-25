@@ -1,13 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from "@testing-library/react"
 
-import { CardImage } from './CardImage';
+import { CardImage } from "./CardImage"
 
-describe('CardImage', () => {
-  test('renders', () => {
-    render(<CardImage />);
+describe("CardImage", () => {
+  test("renders", () => {
+    render(<CardImage />)
 
-    const element = screen.getByText('CardImage');
+    const element = screen.getByText("CardImage")
 
-    expect(element).toBeInTheDocument();
-  });
-});
+    expect(element).toBeInTheDocument()
+  })
+})

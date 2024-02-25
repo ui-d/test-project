@@ -1,5 +1,5 @@
-import { SelectProps } from './Select.types';
+import { SelectProps } from "./Select.types"
 
 export const Select = ({}: SelectProps) => {
-  return <>Select</>;
-};
+  return <>Select</>
+}

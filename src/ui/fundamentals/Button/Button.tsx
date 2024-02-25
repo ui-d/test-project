@@ -1,5 +1,5 @@
-import { ButtonProps } from './Button.types';
+import { ButtonProps } from "./Button.types"
 
 export const Button = ({}: ButtonProps) => {
-  return <>Button</>;
-};
+  return <>Button</>
+}

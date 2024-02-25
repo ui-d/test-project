@@ -1,13 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from "@testing-library/react"
 
-import { Select } from './Select';
+import { Select } from "./Select"
 
-describe('Select', () => {
-  test('renders', () => {
-    render(<Select />);
+describe("Select", () => {
+  test("renders", () => {
+    render(<Select />)
 
-    const element = screen.getByText('Select');
+    const element = screen.getByText("Select")
 
-    expect(element).toBeInTheDocument();
-  });
-});
+    expect(element).toBeInTheDocument()
+  })
+})

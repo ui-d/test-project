@@ -1,5 +1,5 @@
-import { TextProps } from './Text.types';
+import { TextProps } from "./Text.types"
 
 export const Text = ({}: TextProps) => {
-  return <>Text</>;
-};
+  return <>Text</>
+}
