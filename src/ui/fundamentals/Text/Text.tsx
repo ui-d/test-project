@@ -2,7 +2,7 @@ import { TextProps } from "./Text.types"
 import { twMerge } from "tailwind-merge"
 
 export const Text = (props: TextProps) => {
-  const { as: Component = "p", size = "sm", weight = "regular", className, children, ...rest } = props
+  const { as: Component = "p", size = "sm", weight = "regular", className, children, ...domProps } = props
 
   const textSize = {
     sm: "text-sm",
@@ -11,7 +11,7 @@ export const Text = (props: TextProps) => {
   }
 
   return (
-    <Component className={twMerge(textSize[size], weight, className)} {...rest}>
+    <Component className={twMerge(textSize[size], weight, className)} {...domProps}>
       {children}
     </Component>
   )

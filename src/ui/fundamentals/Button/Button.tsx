@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge"
 import { forwardRef } from "react"
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
-  const { asChild, size = "md", disabled, children, ...rest } = props
+  const { asChild, size = "md", children, ...domProps } = props
 
   const Comp = asChild ? Slot : "button"
 
@@ -18,8 +18,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) =>
 
   return (
     <Comp
-      {...rest}
-      disabled={disabled}
+      {...domProps}
       className={twMerge(
         "font-medium",
         "border border-transparent",
@@ -28,8 +27,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) =>
         "text-white",
         "bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500",
         "focus:outline-none focus:ring-2 focus:ring-offset-2",
-        buttonSize,
-        disabled ? "cursor-not-allowed opacity-50" : "hover:bg-indigo-700"
+        buttonSize
       )}
     >
       {children}

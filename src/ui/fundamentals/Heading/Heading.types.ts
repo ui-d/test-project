@@ -21,6 +21,7 @@ export type HeadingBaseProps = {
   className?: string
   /** Heading content */
   children: ReactNode
+  asChild?: boolean
 }
 
 export type HeadingProps = HeadingBaseProps & HTMLProps<HTMLHeadingElement>

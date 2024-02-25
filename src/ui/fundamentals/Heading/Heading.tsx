@@ -1,29 +1,33 @@
 import type { HeadingProps } from "./Heading.types"
+import { Slot } from "@radix-ui/react-slot"
 import { twMerge } from "tailwind-merge"
 
 function filterDOMProps(props: HeadingProps) {
-  const { variant, weight, align, lineHeight, color, transform, className, children, ...domProps } = props
+  const { variant, weight, align, lineHeight, color, transform, className, children, asChild, ...domProps } = props
   return domProps
 }
 
 export const Heading = (props: HeadingProps) => {
-  const { variant = "h1", weight, align, lineHeight, transform, color, className, children } = props
-  const Component = variant
+  const { variant = "h1", weight, align, lineHeight, transform, color, className, children, asChild } = props
+  // Explicitly define the type for Comp to accommodate both Slot and native HTML elements
+  const Comp = asChild ? Slot : (variant as keyof JSX.IntrinsicElements | React.ComponentType<any>)
+
   const domProps = filterDOMProps(props)
 
   const fontSize = {
-    h1: "3xl",
-    h2: "2xl",
-    h3: "xl",
-    h4: "lg",
+    h1: "text-5xl",
+    h2: "text-4xl",
+    h3: "text-3xl",
+    h4: "text-2xl",
+    display: "text-6xl",
   }[variant]
 
   return (
-    <Component
+    <Comp
       {...domProps}
       className={twMerge("font-bold", fontSize, weight, align, lineHeight, transform, color, className)}
     >
       {children}
-    </Component>
+    </Comp>
   )
 }
