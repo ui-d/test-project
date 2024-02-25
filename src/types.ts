@@ -1,4 +1,4 @@
-export type sizes = "sm" | "md" | "lg"
+export type Sizes = "sm" | "md" | "lg"
 
 export type Cars = {
   cars: Car[]
