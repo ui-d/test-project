@@ -1,6 +1,9 @@
 import type { Sizes } from "../../../types"
 
 type TextBaseProps = {
+  /** Set text variant which determinses the size
+   * @default p
+   */
   /** Font size */
   size?: Sizes
   /** Font weight */
