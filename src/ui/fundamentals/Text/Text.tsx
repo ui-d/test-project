@@ -11,7 +11,7 @@ export const Text = (props: TextProps) => {
   }
 
   return (
-    <Component className={twMerge(textSize[size], weight, className)} {...domProps}>
+    <Component className={twMerge("text-dark", textSize[size], weight, className)} {...domProps}>
       {children}
     </Component>
   )

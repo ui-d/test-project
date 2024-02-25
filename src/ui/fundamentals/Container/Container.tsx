@@ -1,11 +1,10 @@
 import { ContainerProps } from "./Container.types"
 
 export const Container = (props: ContainerProps) => {
-  const { children, size, className, ...domProps } = props
-  const sizeClass = size ? `container-${size}` : ""
+  const { children, className, ...domProps } = props
 
   return (
-    <div className={`container ${sizeClass} ${className}`} {...domProps}>
+    <div className={`container mx-auto ${className}`} {...domProps}>
       {children}
     </div>
   )

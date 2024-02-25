@@ -4,7 +4,7 @@ import { CardImage } from "./CardImage"
 
 describe("CardImage", () => {
   test("renders", () => {
-    render(<CardImage />)
+    render(<CardImage src="/test" alt="test" />)
 
     const element = screen.getByText("CardImage")
 

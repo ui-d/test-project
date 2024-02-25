@@ -17,9 +17,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#f0df00",
-        text: "#121212",
-        background: "#f9f9f9",
+        lime: "#f0df00",
+        dark: "#121212",
+        light: "#f9f9f9",
       },
       fontFamily: {
         body: [

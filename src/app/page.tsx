@@ -1,4 +1,8 @@
 import { Metadata } from "next"
+import { Heading } from "src/ui/fundamentals/Heading"
+import { Container } from "src/ui/fundamentals/Container"
+import { Text } from "src/ui/fundamentals/Text"
+import { TextSection } from "../ui/fundamentals/TextSection"
 
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",
@@ -20,7 +24,18 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <main className="bg-white dark:bg-gray-900"></main>
+      <main>
+        <Container className="text-center">
+          <Heading>Text lorem ipsum</Heading>
+          <TextSection size="sm" className="mx-auto">
+            <Text>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum ex mollitia perspiciatis! A, alias
+              assumenda beatae commodi doloribus enim, ipsa iusto laboriosam libero maiores nemo, officia provident quas
+              sit!
+            </Text>
+          </TextSection>
+        </Container>
+      </main>
     </>
   )
 }

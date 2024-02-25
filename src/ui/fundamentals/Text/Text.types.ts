@@ -8,14 +8,6 @@ type TextBaseProps = {
   size?: Sizes
   /** Font weight */
   weight?: "normal" | "bold"
-  /** Text align */
-  align?: "left" | "center" | "right"
-  /** Line height */
-  lineHeight?: "none" | "tight" | "normal" | "loose"
-  /** Text transform */
-  transform?: "none" | "uppercase" | "lowercase" | "capitalize"
-  /** Text color */
-  color?: string
   className?: string
   children?: React.ReactNode
 }
