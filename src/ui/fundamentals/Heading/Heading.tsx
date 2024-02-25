@@ -1,4 +1,4 @@
-import { HeadingProps } from "./Heading.types"
+import type { HeadingProps } from "./Heading.types"
 import { twMerge } from "tailwind-merge"
 
 function filterDOMProps(props: HeadingProps) {

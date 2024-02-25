@@ -1,4 +1,4 @@
-import type { Sizes } from "../../../types"
+import type { Sizes } from "src/types"
 
 type TextBaseProps = {
   /** Set text variant which determinses the size

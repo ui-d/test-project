@@ -1,6 +1,6 @@
-import { HTMLProps, ReactNode } from "react"
+import type { HTMLProps, ReactNode } from "react"
 
-export type HeadingVariants = "h1" | "h2" | "h3" | "h4"
+type HeadingVariants = "h1" | "h2" | "h3" | "h4"
 
 export type HeadingBaseProps = {
   /** Set heading variant which determinses the size.
