@@ -1,4 +1,3 @@
-import React from "react"
 import { TextSection } from "./TextSection"
 
 export default {
@@ -6,4 +5,4 @@ export default {
   component: TextSection,
 }
 
-export const Default = () => <TextSection />
+export const Default = () => {}

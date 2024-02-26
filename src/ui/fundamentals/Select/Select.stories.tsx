@@ -1,9 +1,8 @@
-import React from "react"
-import { Select } from "./Select"
+import { SelectField } from "./Select"
 
 export default {
   title: "YourCategory/Select",
-  component: Select,
+  component: SelectField,
 }
 
-export const Default = () => <Select />
+export const Default = () => {}

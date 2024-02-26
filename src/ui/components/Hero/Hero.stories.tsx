@@ -1,4 +1,3 @@
-import React from "react"
 import { Hero } from "./Hero"
 
 export default {
@@ -6,4 +5,4 @@ export default {
   component: Hero,
 }
 
-export const Default = () => <Hero description="lorem ipsum" header="Lorem Ipsum" />
+export const Default = () => {}

@@ -1,4 +1,3 @@
-import React from "react"
 import { Label } from "./Label"
 
 export default {
@@ -6,4 +5,4 @@ export default {
   component: Label,
 }
 
-export const Default = () => <Label />
+export const Default = () => {}

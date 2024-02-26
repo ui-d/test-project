@@ -1,4 +1,3 @@
-import React from "react"
 import { CardList } from "./CardList"
 
 export default {
@@ -6,4 +5,4 @@ export default {
   component: CardList,
 }
 
-export const Default = () => <CardList />
+export const Default = () => {}

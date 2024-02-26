@@ -1,4 +1,3 @@
-import React from "react"
 import { Container } from "./Container"
 
 export default {
@@ -6,4 +5,4 @@ export default {
   component: Container,
 }
 
-export const Default = () => <Container />
+export const Default = () => {}

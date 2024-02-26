@@ -1,4 +1,3 @@
-import React from "react"
 import { Heading } from "./Heading"
 
 export default {
@@ -6,4 +5,4 @@ export default {
   component: Heading,
 }
 
-export const Default = () => <Heading />
+export const Default = () => {}

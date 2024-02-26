@@ -1,4 +1,3 @@
-import React from "react"
 import { Card } from "./Card"
 
 export default {
@@ -6,4 +5,4 @@ export default {
   component: Card,
 }
 
-export const Default = () => <Card />
+export const Default = () => {}
