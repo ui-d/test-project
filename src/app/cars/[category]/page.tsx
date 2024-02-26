@@ -1,9 +1,10 @@
 import { Metadata } from "next"
-import { Container } from "src/ui/fundamentals/Container"
-import { Heading } from "src/ui/fundamentals/Heading"
+import * as data from "src/data/data.json"
+import { CardList } from "src/ui/components/CardList"
+import { Hero } from "src/ui/components/Hero"
 
 export const metadata: Metadata = {
-  title: "Product Page | Hedin",
+  title: "Hedin assigment",
   twitter: {
     card: "summary_large_image",
   },
@@ -13,21 +14,26 @@ export const metadata: Metadata = {
       {
         width: 1200,
         height: 630,
-        url: "/images/next-enterprise.png",
+        url: "/carimage.jpg",
       },
     ],
   },
 }
 
-export default function ProductCategory({ params }: { params: { category: string } }) {
+export default function CategoryPage({ params }: { params: { category: string } }) {
   const { category } = params
+  const filteredCars = data.cars.filter((car) => car.vehicleType === category)
+
   return (
     <>
       <main>
-        <Container className="text-center">
-          <Heading size="lg">{category}</Heading>
-        </Container>
+        <Hero
+          className="mb-28"
+          header="Text lorem ipsum"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum ex mollitia perspiciatis! A, alias assumenda beatae commodi doloribus enim, ipsa iusto laboriosam! alias assumenda beatae commodi doloribus enim!"
+        />
       </main>
+      <CardList cards={filteredCars} />
     </>
   )
 }
