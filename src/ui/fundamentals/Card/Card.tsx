@@ -8,29 +8,31 @@ import { Text } from "../Text"
 
 export const Card = (props: CardProps) => {
   const { title, brand, link, vehicleType, className } = props
+  const carUrl = `/cars/${vehicleType}/${link.href.split("/").pop()}`
+
   return (
     <article className={twMerge("shadow-md", className)}>
-      <Link href={link.href}>
-        <CardImage placeholder="empty" className="w-full" width={100} height={100} />
-        <div className="pb-16 pl-6 pr-10 pt-8">
+      <div>
+        <CardImage className="w-full" width={100} height={100} />
+        <div className="px-6 pb-16 pt-8">
           <Heading className="mb-8" size="sm" variant="h2" weight="bold">
             {brand}
           </Heading>
           <Text size="sm" className="mb-8">
             {title}
           </Text>
-          <Text size="md" className="mb-2">
+          <Text size="sm" className="mb-10 xl:mb-2">
             carType: {vehicleType}
           </Text>
           <div className="text-right">
             <Button size="md" asChild className={twMerge("bg-lime")}>
-              <Link title={link.title} href={link.href}>
+              <Link title={link.title} href={carUrl}>
                 {link.title}
               </Link>
             </Button>
           </div>
         </div>
-      </Link>
+      </div>
     </article>
   )
 }

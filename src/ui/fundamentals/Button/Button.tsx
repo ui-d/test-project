@@ -19,7 +19,11 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) =>
     <Comp
       {...domProps}
       ref={ref}
-      className={twMerge("shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2", buttonSize[size], className)}
+      className={twMerge(
+        "block text-center shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 xl:inline-block",
+        buttonSize[size],
+        className
+      )}
       {...domProps}
     >
       {children}

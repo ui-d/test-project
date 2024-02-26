@@ -6,8 +6,8 @@ export const Text = (props: TextProps) => {
 
   const textSize = {
     sm: "text-xl",
-    md: "text-2xl",
-    lg: "text-3xl",
+    md: "text-xl xl:text-2xl",
+    lg: "text-xl xl:text-3xl",
   }
 
   return (

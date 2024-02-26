@@ -25,12 +25,12 @@ export default function HomePage() {
     <>
       <main>
         <Hero
-          className="mb-28"
+          className="mb-32"
           header="Text lorem ipsum"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum ex mollitia perspiciatis! A, alias assumenda beatae commodi doloribus enim, ipsa iusto laboriosam! alias assumenda beatae commodi doloribus enim!"
         />
+        <CardList cards={data.cars} />
       </main>
-      <CardList cards={data.cars} />
     </>
   )
 }

@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import * as data from "src/data/data.json"
 import { Container } from "src/ui/fundamentals/Container"
 import { Heading } from "src/ui/fundamentals/Heading"
 
@@ -21,11 +22,13 @@ export const metadata: Metadata = {
 
 export default function ProductPage({ params }: { params: { slug: string } }) {
   const { slug } = params
+  const filteredCar = data.cars.filter((item) => item.link.href.split("/").pop() === slug)
+  const carTitle = filteredCar[0]?.title
   return (
     <>
       <main>
         <Container className="text-center">
-          <Heading size="lg">{slug}</Heading>
+          <Heading size="lg">{carTitle}</Heading>
         </Container>
       </main>
     </>

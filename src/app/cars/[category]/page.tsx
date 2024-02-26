@@ -32,8 +32,8 @@ export default function CategoryPage({ params }: { params: { category: string } 
           header="Text lorem ipsum"
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum ex mollitia perspiciatis! A, alias assumenda beatae commodi doloribus enim, ipsa iusto laboriosam! alias assumenda beatae commodi doloribus enim!"
         />
+        <CardList cards={filteredCars} />
       </main>
-      <CardList cards={filteredCars} />
     </>
   )
 }
