@@ -1,6 +1,6 @@
-import type { ReactNode, HTMLAttributes } from "react"
-import type { Sizes } from "src/types"
+import type { ReactNode } from "react"
 import { ComponentPropsWithRef } from "react"
+import type { Sizes } from "src/types"
 
 export type TextSectionBaseProps = {
   size?: Sizes

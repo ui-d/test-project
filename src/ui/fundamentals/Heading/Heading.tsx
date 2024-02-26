@@ -1,7 +1,7 @@
-import type { HeadingProps } from "./Heading.types"
 import { Slot } from "@radix-ui/react-slot"
 import { twMerge } from "tailwind-merge"
 import { Sizes } from "src/types"
+import type { HeadingProps } from "./Heading.types"
 
 export const Heading = (props: HeadingProps) => {
   const { variant = "h1", size = "lg", weight = "normal", className, children, asChild = false, ...domProps } = props

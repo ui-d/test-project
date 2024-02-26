@@ -1,6 +1,6 @@
 import { Metadata } from "next"
-import { Heading } from "src/ui/fundamentals/Heading"
 import { Container } from "src/ui/fundamentals/Container"
+import { Heading } from "src/ui/fundamentals/Heading"
 
 export const metadata: Metadata = {
   title: "Product Page | Hedin",
@@ -25,7 +25,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     <>
       <main>
         <Container className="text-center">
-          <Heading>{slug}</Heading>
+          <Heading size="lg">{slug}</Heading>
         </Container>
       </main>
     </>

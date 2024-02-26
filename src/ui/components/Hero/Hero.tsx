@@ -1,6 +1,6 @@
-import { HeroProps } from "./Hero.types"
-import { Container, Heading, Text, TextSection } from "src/ui/fundamentals"
 import { twMerge } from "tailwind-merge"
+import { Container, Heading, Text, TextSection } from "src/ui/fundamentals"
+import { HeroProps } from "./Hero.types"
 
 export const Hero = (props: HeroProps) => {
   const { header, description, className } = props

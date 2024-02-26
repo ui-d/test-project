@@ -1,6 +1,6 @@
-import { CardListProps } from "./CardList.types"
-import { Card, Container } from "src/ui/fundamentals"
 import { twMerge } from "tailwind-merge"
+import { Card, Container } from "src/ui/fundamentals"
+import { CardListProps } from "./CardList.types"
 
 export const CardList = (props: CardListProps) => {
   const { cards, className, ...domProps } = props

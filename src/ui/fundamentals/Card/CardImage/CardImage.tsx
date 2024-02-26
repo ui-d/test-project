@@ -2,7 +2,7 @@ import Image from "next/image"
 import { CardImageProps } from "./CardImage.types"
 
 export const CardImage = (props: CardImageProps) => {
-  const { className, src, alt, placeholder, width, height, ...domProps } = props
+  const { className, placeholder, ...domProps } = props
   return (
     <Image
       className={`relative ${className}`}

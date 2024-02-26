@@ -4,7 +4,7 @@ import { Button } from "./Button"
 
 describe("Button", () => {
   test("renders", () => {
-    render(<Button children="test" />)
+    render(<Button>Test</Button>)
 
     const element = screen.getByText("Button")
 

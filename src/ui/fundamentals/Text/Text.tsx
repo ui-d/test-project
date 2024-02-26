@@ -1,5 +1,5 @@
-import { TextProps } from "./Text.types"
 import { twMerge } from "tailwind-merge"
+import { TextProps } from "./Text.types"
 
 export const Text = (props: TextProps) => {
   const { as: Component = "p", size = "sm", weight = "regular", className, children, ...domProps } = props

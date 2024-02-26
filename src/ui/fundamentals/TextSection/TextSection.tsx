@@ -1,5 +1,5 @@
-import { TextSectionProps } from "./TextSection.types"
 import { twMerge } from "tailwind-merge"
+import { TextSectionProps } from "./TextSection.types"
 
 export const TextSection = (props: TextSectionProps) => {
   const { size = "md", children, className, ...domProps } = props

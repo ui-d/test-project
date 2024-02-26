@@ -1,13 +1,13 @@
-import { CardProps } from "./Card.types"
-import { CardImage } from "./CardImage"
-import { Heading } from "../Heading"
-import { Text } from "../Text"
-import { Button } from "../Button"
 import Link from "next/link"
 import { twMerge } from "tailwind-merge"
+import { CardProps } from "./Card.types"
+import { CardImage } from "./CardImage"
+import { Button } from "../Button"
+import { Heading } from "../Heading"
+import { Text } from "../Text"
 
 export const Card = (props: CardProps) => {
-  const { title, brand, link, vehicleType, alt, src, className } = props
+  const { title, brand, link, vehicleType, className } = props
   return (
     <article className={twMerge("shadow-md", className)}>
       <Link href={link.href}>

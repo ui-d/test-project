@@ -1,8 +1,8 @@
-import type { ButtonProps } from "./Button.types"
 import { Slot } from "@radix-ui/react-slot"
-import { twMerge } from "tailwind-merge"
 import { forwardRef } from "react"
+import { twMerge } from "tailwind-merge"
 import { Sizes } from "src/types"
+import type { ButtonProps } from "./Button.types"
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const { asChild, size = "md", children, className, ...domProps } = props
@@ -26,3 +26,5 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) =>
     </Comp>
   )
 })
+
+Button.displayName = "Button"

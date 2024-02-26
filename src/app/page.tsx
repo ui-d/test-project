@@ -1,7 +1,7 @@
 import { Metadata } from "next"
-import { Hero } from "src/ui/components/Hero"
-import { CardList } from "src/ui/components/CardList"
 import * as data from "src/data/data.json"
+import { CardList } from "src/ui/components/CardList"
+import { Hero } from "src/ui/components/Hero"
 
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",

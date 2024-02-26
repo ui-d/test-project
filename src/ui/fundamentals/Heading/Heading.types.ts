@@ -1,6 +1,6 @@
 import type { ReactNode } from "react"
-import type { Sizes } from "src/types"
 import { ComponentPropsWithRef } from "react"
+import type { Sizes } from "src/types"
 
 type HeadingVariants = "h1" | "h2" | "h3" | "h4"
 

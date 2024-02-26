@@ -1,5 +1,5 @@
-import type { ComponentPropsWithoutRef } from "react"
 import { PlaceholderValue } from "next/dist/shared/lib/get-img-props"
+import type { ComponentPropsWithoutRef } from "react"
 
 export type CardImageBaseProps = {
   src?: string

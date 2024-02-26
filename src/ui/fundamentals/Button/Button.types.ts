@@ -1,5 +1,5 @@
-import type { Sizes } from "src/types"
 import type { ComponentPropsWithRef, ReactNode } from "react"
+import type { Sizes } from "src/types"
 
 type ButtonBaseProps = {
   /** The size of the button */
