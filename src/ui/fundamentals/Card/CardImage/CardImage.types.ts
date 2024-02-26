@@ -1,12 +1,13 @@
-import type { HTMLAttributes } from "react"
+import type { ComponentPropsWithoutRef } from "react"
+import { PlaceholderValue } from "next/dist/shared/lib/get-img-props"
 
 export type CardImageBaseProps = {
   src?: string
   alt?: string
   className?: string
-  placeholder?: string
+  placeholder?: PlaceholderValue
   width?: number
   height?: number
 }
 
-export type CardImageProps = CardImageBaseProps & HTMLAttributes<HTMLImageElement>
+export type CardImageProps = CardImageBaseProps & ComponentPropsWithoutRef<"img">

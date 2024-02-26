@@ -1,6 +1,6 @@
 import type { ReactNode, HTMLAttributes } from "react"
 import type { Sizes } from "src/types"
-import { HtmlAttributes } from "csstype"
+import { ComponentPropsWithRef } from "react"
 
 export type TextSectionBaseProps = {
   size?: Sizes
@@ -10,4 +10,4 @@ export type TextSectionBaseProps = {
   children: ReactNode
 }
 
-export type TextSectionProps = TextSectionBaseProps & HTMLAttributes<HTMLDivElement>
+export type TextSectionProps = TextSectionBaseProps & ComponentPropsWithRef<"div">

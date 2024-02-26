@@ -4,7 +4,7 @@ import { Container } from "./Container"
 
 describe("Container", () => {
   test("renders", () => {
-    render(<Container />)
+    render(<Container>Test</Container>)
 
     const element = screen.getByText("Container")
 

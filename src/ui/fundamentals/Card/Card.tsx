@@ -11,12 +11,12 @@ export const Card = (props: CardProps) => {
   return (
     <article className={twMerge("shadow-md", className)}>
       <Link href={link.href}>
-        <CardImage placeholder="empty" className="w-full" width="100" height="100" />
+        <CardImage placeholder="empty" className="w-full" width={100} height={100} />
         <div className="pb-16 pl-6 pr-10 pt-8">
-          <Heading className="mb-8" size="sm" variant="h2">
+          <Heading className="mb-8" size="sm" variant="h2" weight="bold">
             {brand}
           </Heading>
-          <Text size="md" className="mb-8">
+          <Text size="sm" className="mb-8">
             {title}
           </Text>
           <Text size="md" className="mb-2">

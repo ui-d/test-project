@@ -4,7 +4,7 @@ import { Heading } from "./Heading"
 
 describe("Heading", () => {
   test("renders", () => {
-    render(<Heading />)
+    render(<Heading size="md" children="Lorem ipsum" />)
 
     const element = screen.getByText("Heading")
 
