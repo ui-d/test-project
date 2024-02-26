@@ -5,7 +5,7 @@ export const CardImage = (props: CardImageProps) => {
   const { className, ...domProps } = props
   return (
     <Image
-      className={`relative ${className}`}
+      className={`relative w-full ${className}`}
       placeholder="empty"
       src="/carimage.jpg"
       width={448}
