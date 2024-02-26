@@ -10,22 +10,27 @@ export const Card = (props: CardProps) => {
   const { title, brand, link, vehicleType, alt, src, className } = props
   return (
     <article className={twMerge("shadow-md", className)}>
-      <CardImage placeholder="empty" className="w-full" width="100" height="100" />
-      <div className="px-6 py-8">
-        <Heading className="mb-8" size="sm" variant="h2">
-          {brand}
-        </Heading>
-        <Text size="md" className="mb-10">
-          {title}
-        </Text>
-        <div className="text-right">
-          <Button size="lg" asChild title="Car" className={twMerge("bg-lime")}>
-            <Link title={link.title} href={link.href}>
-              Car
-            </Link>
-          </Button>
+      <Link href={link.href}>
+        <CardImage placeholder="empty" className="w-full" width="100" height="100" />
+        <div className="pb-16 pl-6 pr-10 pt-8">
+          <Heading className="mb-8" size="sm" variant="h2">
+            {brand}
+          </Heading>
+          <Text size="md" className="mb-8">
+            {title}
+          </Text>
+          <Text size="md" className="mb-2">
+            carType: {vehicleType}
+          </Text>
+          <div className="text-right">
+            <Button size="md" asChild className={twMerge("bg-lime")}>
+              <Link title={link.title} href={link.href}>
+                {link.title}
+              </Link>
+            </Button>
+          </div>
         </div>
-      </div>
+      </Link>
     </article>
   )
 }

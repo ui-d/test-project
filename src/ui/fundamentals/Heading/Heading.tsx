@@ -15,7 +15,7 @@ export const Heading = (props: HeadingProps) => {
   }
 
   return (
-    <Comp {...domProps} className={twMerge("font-bold, text-dark", fontSize[size], className)}>
+    <Comp {...domProps} className={twMerge("font-bold", "text-dark", fontSize[size], className)}>
       {children}
     </Comp>
   )

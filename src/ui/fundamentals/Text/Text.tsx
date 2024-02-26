@@ -6,7 +6,7 @@ export const Text = (props: TextProps) => {
 
   const textSize = {
     sm: "text-base",
-    md: "text-2xl",
+    md: "text-xl",
     lg: "text-3xl",
   }
 

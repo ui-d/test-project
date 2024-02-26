@@ -27,7 +27,7 @@ export default function HomePage() {
         <Hero
           className="mb-20"
           header="Text lorem ipsum"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum ex mollitia perspiciatis! A, alias assumenda beatae commodi doloribus enim, ipsa iusto laboriosam!"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum ex mollitia perspiciatis! A, alias assumenda beatae commodi doloribus enim, ipsa iusto laboriosam! alias assumenda beatae commodi doloribus enim!"
         />
       </main>
       <CardList cards={data.cars} />

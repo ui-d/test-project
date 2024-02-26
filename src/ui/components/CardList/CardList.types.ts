@@ -1,6 +1,6 @@
 import { Car } from "src/types"
 
-type CardListProps = {
+export type CardListProps = {
   className?: string
   cards: Car[]
 }
