@@ -5,9 +5,9 @@ export const Text = (props: TextProps) => {
   const { as: Component = "p", size = "sm", weight = "regular", className, children, ...domProps } = props
 
   const textSize = {
-    sm: "text-sm",
-    md: "text-base",
-    lg: "text-lg",
+    sm: "text-base",
+    md: "text-2xl",
+    lg: "text-3xl",
   }
 
   return (

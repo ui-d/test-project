@@ -1,8 +1,8 @@
 import type { HTMLAttributes } from "react"
 
 export type CardImageBaseProps = {
-  src: string
-  alt: string
+  src?: string
+  alt?: string
   className?: string
   placeholder?: string
   width?: number

@@ -1,4 +1,5 @@
 import type { HTMLProps, ReactNode } from "react"
+import type { Sizes } from "src/types"
 
 type HeadingVariants = "h1" | "h2" | "h3" | "h4"
 
@@ -7,6 +8,8 @@ export type HeadingBaseProps = {
    * @default h1
    */
   variant?: HeadingVariants
+  /** Font size */
+  size: Sizes
   /** CSS classes. */
   className?: string
   /** Heading content */

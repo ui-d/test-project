@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       colors: {
         lime: "#f0df00",
+        limeDark: "#c0bf00",
         dark: "#121212",
         light: "#f9f9f9",
       },

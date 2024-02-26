@@ -1,5 +1,7 @@
 import { Metadata } from "next"
 import { Hero } from "src/ui/components/Hero"
+import { CardList } from "src/ui/components/CardList"
+import * as data from "src/data/data.json"
 
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",
@@ -23,10 +25,12 @@ export default function HomePage() {
     <>
       <main>
         <Hero
+          className="mb-20"
           header="Text lorem ipsum"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum ex mollitia perspiciatis! A, alias assumenda beatae commodi doloribus enim, ipsa iusto laboriosam libero maiores nemo, officia provident quas sit!"
+          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorum ex mollitia perspiciatis! A, alias assumenda beatae commodi doloribus enim, ipsa iusto laboriosam!"
         />
       </main>
+      <CardList cards={data.cars} />
     </>
   )
 }

@@ -1,5 +1,5 @@
 export { Button } from "./Button"
-export { CardImage } from "./CardImage"
+export { CardImage } from "./Card/CardImage"
 export { Container } from "./Container"
 export { Heading } from "./Heading"
 export { Label } from "./Label"
