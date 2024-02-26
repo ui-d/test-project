@@ -1,9 +1,9 @@
-import React from 'react';
-import { TextSection } from './TextSection';
+import React from "react"
+import { TextSection } from "./TextSection"
 
 export default {
-title: 'YourCategory/TextSection',
-component: TextSection,
-};
+  title: "YourCategory/TextSection",
+  component: TextSection,
+}
 
-export const Default = () => <TextSection />;
+export const Default = () => <TextSection />

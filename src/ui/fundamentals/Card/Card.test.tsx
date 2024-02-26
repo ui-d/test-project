@@ -1,13 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from "@testing-library/react"
 
-import { Card } from './Card';
+import { Card } from "./Card"
 
-describe('Card', () => {
-  test('renders', () => {
-    render(<Card />);
+describe("Card", () => {
+  test("renders", () => {
+    render(<Card />)
 
-    const element = screen.getByText('Card');
+    const element = screen.getByText("Card")
 
-    expect(element).toBeInTheDocument();
-  });
-});
+    expect(element).toBeInTheDocument()
+  })
+})
