@@ -1,10 +1,14 @@
 import { render, screen } from "@testing-library/react"
 
-import { Select } from "./Select"
+import { SelectField } from "./Select"
 
 describe("Select", () => {
   test("renders", () => {
-    render(<Select />)
+    render(
+      <SelectField>
+        <option>1</option>
+      </SelectField>
+    )
 
     const element = screen.getByText("Select")
 

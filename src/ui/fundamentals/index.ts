@@ -4,7 +4,7 @@ export { Card } from "./Card"
 export { Container } from "./Container"
 export { Heading } from "./Heading"
 export { Label } from "./Label"
-export { Select } from "./Select"
+export { SelectField } from "./Select"
 export { Text } from "./Text"
 export { TextSection } from "./TextSection"
 /* PLOP_INJECT_EXPORT */

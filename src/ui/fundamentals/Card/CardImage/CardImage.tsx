@@ -8,8 +8,8 @@ export const CardImage = (props: CardImageProps) => {
       className={`relative ${className}`}
       placeholder={placeholder}
       src="/carimage.jpg"
-      width={400}
-      height={100}
+      width={448}
+      height={290}
       alt="Cars on the street"
       {...domProps}
     />

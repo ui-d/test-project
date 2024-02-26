@@ -4,7 +4,7 @@ import { CardList } from "./CardList"
 
 describe("CardList", () => {
   test("renders", () => {
-    render(<CardList />)
+    render(<CardList cards={[]} />)
 
     const element = screen.getByText("CardList")
 

@@ -6,7 +6,7 @@ export const Hero = (props: HeroProps) => {
   const { header, description, className } = props
 
   return (
-    <Container className={twMerge("text-center", className)}>
+    <Container className={twMerge("text-center", "pt-20", className)}>
       <Heading size="lg">{header}</Heading>
       <TextSection size="sm" className="mx-auto">
         <Text size="md">{description}</Text>
